@@ -1,0 +1,10 @@
+site "http://community.opscode.com/api/v1"
+ 
+cookbook "apt"
+cookbook "graphite"
+cookbook "vim"
+cookbook "logstash"
+cookbook "riemann"
+ 
+cookbook "statsd",
+  :git => "https://github.com/hectcastro/chef-statsd"
