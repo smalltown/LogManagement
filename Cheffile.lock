@@ -105,9 +105,9 @@ GIT
       runit (>= 0.0.0)
 
 GIT
-  remote: https://github.com/hudl/riemann-cookbook
+  remote: https://github.com/smalltown/riemann-cookbook
   ref: master
-  sha: 3f3d7b3cd8c7b0fe7b998badd1b91853815cfea6
+  sha: 4147d82e45a1d27fc80ec0e77b1adcabe3e67131
   specs:
     riemann (0.1.2)
       graphite (>= 0.0.0)
