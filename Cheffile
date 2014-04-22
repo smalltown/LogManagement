@@ -11,4 +11,4 @@ cookbook "riemann",
   :git => "https://github.com/smalltown/riemann-cookbook"
 
 cookbook "statsd",
-  :git => "https://github.com/hectcastro/chef-statsd"
+  :git => "https://github.com/smalltown/chef-statsd"

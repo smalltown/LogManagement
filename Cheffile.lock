@@ -95,7 +95,7 @@ SITE
       yum (>= 2.3.0)
 
 GIT
-  remote: https://github.com/hectcastro/chef-statsd
+  remote: https://github.com/smalltown/chef-statsd
   ref: master
   sha: 95f86c1d5ed55e3386c1b3c075a40868d080dac8
   specs:

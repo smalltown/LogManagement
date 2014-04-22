@@ -39,11 +39,11 @@ Vagrant.configure("2") do |config|
 
     chef.json = {
       :graphite => {
-        :python_version => '2.7',
+        :python_version => "2.7",
         :password => "justfortesting",
         :timezone=> "Asia/Taipei",
         :carbon => {
-          :line_receiver_interface => '0.0.0.0'
+          :line_receiver_interface => "0.0.0.0"
         },
         :whisper => {
         },
@@ -51,12 +51,20 @@ Vagrant.configure("2") do |config|
         }
       },
       :statsd => {
-        :dir => '/opt/statsd',
+        :dir => "/opt/statsd",
         :graphite => {
-          :global_prefix => 'statsd'
+          :global_prefix => "statsd"
+        },
+        :backends => {
+          "riemann" => nil
+        },
+        :extra_config => { 
+          "riemannPort" => 5555,
+          "riemannHost"=> "127.0.0.1",
         }
       },
       :riemann => {
+	
       }
     }
   end
