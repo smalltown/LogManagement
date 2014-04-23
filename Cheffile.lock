@@ -95,23 +95,24 @@ SITE
       yum (>= 2.3.0)
 
 GIT
-  remote: https://github.com/smalltown/chef-statsd
+  remote: https://github.com/smalltown/chef-riemann
   ref: master
-  sha: 95f86c1d5ed55e3386c1b3c075a40868d080dac8
+  sha: e152d304ccdee45fb0f615fa9fb96310c6252b33
   specs:
-    statsd (1.1.5)
-      git (>= 0.0.0)
-      nodejs (>= 0.0.0)
+    riemann (1.0.0)
+      java (>= 0.0.0)
+      rbenv (>= 0.0.0)
       runit (>= 0.0.0)
 
 GIT
-  remote: https://github.com/smalltown/riemann-cookbook
-  ref: master
-  sha: 4147d82e45a1d27fc80ec0e77b1adcabe3e67131
+  remote: https://github.com/smalltown/chef-statsd
+  ref: develop
+  sha: 55b2ef9863541cf3bd3b33e484a068d9a56b3cba
   specs:
-    riemann (0.1.2)
-      graphite (>= 0.0.0)
-      yum (>= 0.0.0)
+    statsd (1.1.6)
+      git (>= 0.0.0)
+      nodejs (>= 0.0.0)
+      runit (>= 0.0.0)
 
 DEPENDENCIES
   apt (>= 0)

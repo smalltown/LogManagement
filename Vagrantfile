@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "hashicorp/precise64"
+  config.vm.box = "ffuenf/ubuntu-12.04.4-server-amd64"
 
   # config.vm.network :private_network, ip: "192.168.33.10"
   #config.vm.network :public_network
@@ -32,10 +32,10 @@ Vagrant.configure("2") do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "cookbooks"
     chef.add_recipe "apt"
+    chef.add_recipe "vim"
     chef.add_recipe "graphite"
     chef.add_recipe "statsd"
     chef.add_recipe "riemann"
-    chef.add_recipe "vim"
 
     chef.json = {
       :graphite => {

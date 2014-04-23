@@ -8,7 +8,8 @@ cookbook "graphite"
 cookbook "logstash"
 
 cookbook "riemann",
-  :git => "https://github.com/smalltown/riemann-cookbook"
+  :git => "https://github.com/smalltown/chef-riemann"
 
 cookbook "statsd",
-  :git => "https://github.com/smalltown/chef-statsd"
+  :git => "https://github.com/smalltown/chef-statsd",
+  :ref => "develop"
